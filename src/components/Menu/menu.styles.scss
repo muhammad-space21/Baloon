@@ -1,0 +1,28 @@
+$bg-navbar: #39A8E0;
+$bg-body: #EEF9FF;
+$primary-btn:#FE6136;
+$primary-blue: #009BFF;
+$btn-green: #17D269;
+$btn-back: #5F84B1;
+$color-footer: #274596;
+$table-blue: #D6EEFB;
+$table-grey: #DEE7EC;
+$btn-shadow: 6px 6px 6px #000000 12%; // opacity
+$marketing-card-one: linear-gradient(to bottom right, #36D1DC, #5B86E5);
+$marketing-card-two: linear-gradient(to bottom right, #FEB47B, #FF7E5F);
+$marketing-card-two: linear-gradient(to bottom right, #02AAB0, #00CDAC);
+$header-color: linear-gradient(#39A8E0, #193C79);
+$article-one: linear-gradient(to bottom right, #6A71D8, #764BA2, 80%); // opacity
+$article-two: linear-gradient(to bottom right, #CC2B5E, 52%, #CC2B5E, 62%); // opacity
+$neu-morphism: 12px 12px 12px, hsl(0, 1%, 66% ),    //opacity
+                -12px, -12px, 12px rgb(255, 250, 250);
+$card-description: 0, 18px, 36px, #000000, 16%; // opacity
+$form-page-color: linear-gradient(to bottom right, #009BFF, #68E7A0);
+$btn-shadow: 3px 3px 20px $primary-blue;
+
+.menu {
+    width: 100%;
+    height: 500px;
+    background-color: $bg-body;
+
+}
