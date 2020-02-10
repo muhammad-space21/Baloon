@@ -2,7 +2,7 @@ import React from 'react';
 
 import './search.styles.scss';
 
-import { Form, Col, Row } from 'react-bootstrap';
+import { Form, Col  } from 'react-bootstrap';
 
 
 class Search extends React.Component {

@@ -6,7 +6,7 @@ import Header from '../../components/header/header';
 import BrandsContainer from '../../components/brands-container/brands-container';
 import Menu from '../../components/Menu/menu';
 import MarketingPage from '../../components/marketing-page/marketing-page';
-
+import AboutUsSection from '../../components/about-us/about-us';
 
 
 const Homepage = () => (
@@ -15,6 +15,7 @@ const Homepage = () => (
         <BrandsContainer />
         <Menu />
         <MarketingPage />
+        <AboutUsSection />
     </div>
 );
 
