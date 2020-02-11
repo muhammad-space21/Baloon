@@ -3,7 +3,7 @@ import React from 'react';
 import './carousel.styles.scss';
 
 import { Carousel } from 'react-bootstrap';
-import carOne from '../../Assets/images/main-page-hummer.img.png';
+import carOne from '../../Assets/images/main-page-hummer.cropped.img.png';
 import carTwo from '../../Assets/images/main-page-truck.img.png';
 import carThree from '../../Assets/images/main-page-yellow.img.png';
 

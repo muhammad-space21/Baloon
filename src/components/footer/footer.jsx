@@ -8,7 +8,7 @@ import ButtonFormBack from '../button-form-back/button-form-back';
 import telegramIcon from '../../Assets/Icons/telegram.png';
 import instagramIcon from '../../Assets/Icons/instagram.png';
 import facebookIcon from '../../Assets/Icons/facebook.png';
-import skypeIcon  from '../../Assets/Icons/skype.png';
+import skypeIcon  from '../../Assets/Icons/skype.custom.PNG';
 
 
 class Footer extends React.Component {
