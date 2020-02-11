@@ -30,7 +30,7 @@ class Footer extends React.Component {
                         <h4>Location</h4>
                         </Col>
                         <Col lg={4}>
-                            <Form className='form'>
+                            <Form className='message-form'>
                                 <Form.Group controlId="formBasicEmail" >
                                     <Form.Control className='email' type="email" placeholder="Email" />
                                 </Form.Group>

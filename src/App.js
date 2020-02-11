@@ -11,6 +11,7 @@ import SearchResultPage from './pages/search-result-page/search-result';
 import OrderPage from './pages/order-page/order-page';
 import ArticleCarPage from './pages/article-car-page/article-car-page';
 import ArticleTruckPage from './pages/article-truck-page/article-truck-page';
+import FormPage from './pages/form-page/form-page';
 
 
 class App extends React.Component {
@@ -28,6 +29,7 @@ class App extends React.Component {
           <Route path='/order-page' component={OrderPage} />
           <Route path='/article-car-page' component={ArticleCarPage} />
           <Route path='/article-truck-page' component={ArticleTruckPage} />
+          <Route path='/form-page' component={FormPage} />
         </Switch>
       </div>
     )
