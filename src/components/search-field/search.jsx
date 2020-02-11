@@ -14,7 +14,7 @@ class Search extends React.Component {
                     <Form.Row>
                         <Form.Group as={Col} controlId="formGridState">
                             <Form.Control as="select" className='width-input'>
-                                <option>Width</option>
+                                <option className='option'>Width</option>
                                 <option>...</option>
                             </Form.Control>
                         </Form.Group>

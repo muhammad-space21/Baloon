@@ -27,22 +27,14 @@ $form-page-color: linear-gradient(to bottom right, #009BFF, #68E7A0);
     
     #basic-navbar-nav {
         background-color: $bg-navbar;
-        //height: 500px;
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: flex-end;
-        // align-items: center;
-
-        // @media screen and ( max-width: 576px ) {
-        //     width: 100px;
-        //     height: 500px;
-        // }
-
     }
 
     .nav-link {
         color: white;
         font-weight: 500;
+        &:hover {
+            color: $table-blue;
+        }
     }
 
     .order {

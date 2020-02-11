@@ -1,0 +1,26 @@
+.button-form-back {
+    .button-custom  {
+        width: 120px;
+        height: 40px;
+        border-radius: 7px;
+        background-color: #39A8E0;
+        border-color: #39A8E0;
+        color: white;
+        font-size: 12px;
+        font-weight: 500;
+        box-shadow: 3px 3px 3px rgb(2, 72, 148);
+
+        &:hover {
+            background-color: #0082D6;
+            border-color: #0082D6;
+            color: #F2F7FA;
+            cursor: pointer;
+            
+        }
+        &:focus {
+            background-color: #006AD8;
+            border-color: #006AD8;
+            color: #EFF3F6;
+        }
+    }
+};

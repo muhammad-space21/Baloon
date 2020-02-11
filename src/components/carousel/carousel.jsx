@@ -20,7 +20,7 @@ const CarouselMain = () => (
             </Carousel.Item>
             <Carousel.Item>
                 <img
-                className="d-block  img2"
+                className="d-block img2"
                 src={carTwo}
                 alt="Second slide"
                 />

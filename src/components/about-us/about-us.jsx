@@ -13,36 +13,40 @@ const AboutUsSection = () => (
             <Row>
                 <Col>
                     <div className='image-one-container'>
-                        <img className='image-first' src={imageFirst} alt="About us image"/>
+                        <img className='image-first' src={imageFirst} alt="About us"/>
                     </div>
                 </Col>
                 <Col>
-                <p className='p1'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing 
-                    elit, sed do eiusmod tempor incididunt ut labore et 
-                    dolore magna aliqua. Sed risus pretium quam 
-                    vulputate. Leo urna molestie at elementum eu 
-                    facilisis sed. At lectus urna duis convallis convallis. 
-                    Faucibus ornare suspendisse sed nisi lacus sed 
-                    viverra tellus in. In nibh mauris cursus mattis. 
-                    </p>
+                <div className='paragraph'>
+                    <p className='p1'>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing 
+                        elit, sed do eiusmod tempor incididunt ut labore et 
+                        dolore magna aliqua. Sed risus pretium quam 
+                        vulputate. Leo urna molestie at elementum eu 
+                        facilisis sed. At lectus urna duis convallis convallis. 
+                        Faucibus ornare suspendisse sed nisi lacus sed 
+                        viverra tellus in. In nibh mauris cursus mattis. 
+                        </p>
+                </div>
                 </Col>
             </Row>
             <Row>
             <Col>
-                <p className='p2'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing 
-                    elit, sed do eiusmod tempor incididunt ut labore et 
-                    dolore magna aliqua. Sed risus pretium quam 
-                    vulputate. Leo urna molestie at elementum eu 
-                    facilisis sed. At lectus urna duis convallis convallis. 
-                    Faucibus ornare suspendisse sed nisi lacus sed 
-                    viverra tellus in. In nibh mauris cursus mattis. 
-                </p>
+            <div className='paragraph'>
+                    <p className='p2'>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing 
+                        elit, sed do eiusmod tempor incididunt ut labore et 
+                        dolore magna aliqua. Sed risus pretium quam 
+                        vulputate. Leo urna molestie at elementum eu 
+                        facilisis sed. At lectus urna duis convallis convallis. 
+                        Faucibus ornare suspendisse sed nisi lacus sed 
+                        viverra tellus in. In nibh mauris cursus mattis. 
+                        </p>
+                </div>
                 </Col>
                 <Col>
                     <div className='image-two-container'>
-                        <img className='image-second'  src={imageSecond} alt="About us image"/>
+                        <img className='image-second'  src={imageSecond} alt="About us"/>
                     </div>
                 </Col>
             </Row>

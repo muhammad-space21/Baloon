@@ -35,10 +35,13 @@ $btn-shadow: 3px 3px 20px $primary-blue;
                 &:hover {
                     border-color: $bg-navbar;
                     cursor: pointer;
+                    &::placeholder {
+                        color: $bg-navbar;
+                    }
                 }
                 &:focus {
                     box-shadow: $btn-shadow;
                 }
         }
-    }
+}
 };
