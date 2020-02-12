@@ -1,0 +1,79 @@
+$bg-navbar: #39A8E0;
+$bg-body: #EEF9FF;
+$primary-btn:#FE6136;
+$primary-blue: #009BFF;
+$btn-green: #17D269;
+$btn-back: #5F84B1;
+$color-footer: #274596;
+$table-blue: #D6EEFB;
+$table-grey: #DEE7EC;
+$btn-shadow: 6px 6px 6px #000000 12%; // opacity
+$marketing-card-one: linear-gradient(to bottom right, #36D1DC, #5B86E5);
+$marketing-card-two: linear-gradient(to bottom right, #FEB47B, #FF7E5F);
+$marketing-card-two: linear-gradient(to bottom right, #02AAB0, #00CDAC);
+$header-color: linear-gradient(#39A8E0, #193C79);
+$article-one: linear-gradient(to bottom right, #6A71D8, #764BA2); 
+$article-two: linear-gradient(to bottom right, #CC2B5E, 52%, #CC2B5E); 
+$new-morphism: -12px -12px 12px rgba(255, 255, 255, 1),
+                12px 12px 12px rgba(0, 0, 0, 0.1);
+$card-description: 0, 18px, 36px, #000000, 16%; // opacity
+$form-page-color: linear-gradient(to bottom right, #009BFF, #68E7A0);
+$btn-shadow: 3px 3px 20px $primary-blue;
+
+.menu-item { 
+    width: 25%;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    .menu-item-body {
+        width: 100%;
+        height: 80%;
+        border-radius: 20px;
+        box-shadow: $new-morphism;    
+
+        .image {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 5px;
+        }
+    
+    
+        }
+
+        .item-footer {
+            width: 100%;
+            height: 20%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+
+            .custom-button {
+                width: 40%;
+                margin-left: 50px;
+                margin-top: 20px;
+            }
+            
+    
+            .name {
+                width: 60%;
+                margin-top: 15px;
+                margin-left: 10px;
+                color: $primary-blue;
+                font-size: 18px;
+                font-weight: 500;
+
+                
+            }
+
+    }
+};
