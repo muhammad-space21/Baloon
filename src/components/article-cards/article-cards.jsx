@@ -18,7 +18,7 @@ class ArticleCards extends React.Component {
                     <Row>
                         <Col>
                             <div className='card-body-one'>
-                                <img className='car-image' src={carImage} onClick={this.handleChange} alt="car-image" fluid />
+                                <img className='car-image' src={carImage} onClick={this.handleChange} alt="car" fluid />
                                 <p className='title'>
                                     PASSENGER CAR 
                                     <br/>
@@ -28,7 +28,7 @@ class ArticleCards extends React.Component {
                         </Col>
                         <Col>
                             <div className='card-body-two'>
-                                <img className='truck-image' src={truckImage} onClick={this.handleChange} alt="truck-image" fluid />
+                                <img className='truck-image' src={truckImage} onClick={this.handleChange} alt="truck" fluid />
                                 <p className='title'>
                                     TRUCK / BUS
                                     <br/>

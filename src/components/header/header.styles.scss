@@ -26,4 +26,7 @@ $form-page-color: linear-gradient(to bottom right, #009BFF, #68E7A0);
     flex-direction: column;
     align-items: center;
     background-image: $header-color;
+    @media screen and ( max-width: 576px) {
+        height: 1100px;
+    }
 }
