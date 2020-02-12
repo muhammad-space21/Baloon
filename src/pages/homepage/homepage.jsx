@@ -5,6 +5,7 @@ import './homepage.styles.scss';
 import Header from '../../components/header/header';
 import BrandsContainer from '../../components/brands-container/brands-container';
 import Menu from '../../components/Menu/menu';
+import SeeMore  from '../../components/see-more-container/see-more';
 import MarketingPage from '../../components/marketing-page/marketing-page';
 import AboutUsSection from '../../components/about-us/about-us';
 import ArticleCards from '../../components/article-cards/article-cards';
@@ -15,6 +16,7 @@ const Homepage = () => (
         <Header />
         <BrandsContainer />
         <Menu />
+        <SeeMore />
         <MarketingPage />
         <AboutUsSection />
         <ArticleCards />
