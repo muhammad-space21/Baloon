@@ -13,7 +13,7 @@ const SeeMorePreview = ({items}) => (
         <div className='see-more-preview'>
             <div className='preview'>
             {items 
-                    .filter(( item, idx ) => idx > 3 )
+                    .filter(( item, idx ) => idx >= 3 )
                     .map((item) => (
                         <MenuItem key={item.id} item={item} />
                     ))

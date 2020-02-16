@@ -14,11 +14,11 @@ class ArticleCards extends React.Component {
     render() {
         return (
             <div className='article-cards'>
-                <Container fluid={true} >
+                <Container fluid='true' >
                     <Row>
                         <Col>
                             <div className='card-body-one'>
-                                <img className='car-image' src={carImage} onClick={this.handleChange} alt="car" fluid />
+                                <img className='car-image' src={carImage} onClick={this.handleChange} alt="car"  />
                                 <p className='title'>
                                     PASSENGER CAR 
                                     <br/>
@@ -28,7 +28,7 @@ class ArticleCards extends React.Component {
                         </Col>
                         <Col>
                             <div className='card-body-two'>
-                                <img className='truck-image' src={truckImage} onClick={this.handleChange} alt="truck" fluid />
+                                <img className='truck-image' src={truckImage} onClick={this.handleChange} alt="truck"  />
                                 <p className='title'>
                                     TRUCK / BUS
                                     <br/>
