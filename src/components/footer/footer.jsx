@@ -5,6 +5,7 @@ import './footer.styles.scss';
 import { Container, Row, Col, Form } from 'react-bootstrap';
 import ButtonFormBack from '../button-form-back/button-form-back';
 
+
 import telegramIcon from '../../Assets/Icons/telegram.png';
 import instagramIcon from '../../Assets/Icons/instagram.png';
 import facebookIcon from '../../Assets/Icons/facebook.png';
@@ -25,7 +26,8 @@ class Footer extends React.Component {
                         <Col xl lg md={3} sm xs={6} xl lg md={{order: 2}} sm xs={{order: 3}}>
                             <h1>LINKS</h1>
                             <h4 className='custom'>Order Table</h4>
-                            <h4>Article</h4>
+                            <h4>Article cars</h4>
+                            <h4>Article truck</h4>
                             <h4>Contact us</h4>
                             <h4>Location</h4>
                         </Col>

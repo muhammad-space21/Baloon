@@ -3,21 +3,43 @@
         width: 100%;
         height: 530px;
 
-        .img1 {
-        width: 700px;
-        height: 450px;
-        margin-left: 300px;
-        }
-        .img2 {
-            width: 700px;
-            height: 450px;
-            margin-left: 300px;
-        }
-        .img3 {
-            width: 700px;
-            height: 450px;
-            margin-left: 300px;
-
+        .image-holder-1 {
+            width: 100%;
+            height: 530px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            .img1 {
+                width: 60%;
+                height: 90%;
+                }
         }
 
+        .image-holder-2 {
+            width: 100%;
+            height: 530px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            .img2 {
+                width: 60%;
+                height: 85%;
+            }
+        }        
+        
+        .image-holder-3 {
+            width: 100%;
+            height: 530px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            .img3 {
+                width: 60%;
+                height: 90%;
+                }
+        }        
     }
+

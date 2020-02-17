@@ -14,7 +14,7 @@ const NavbarMain = () => (
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="ml-auto">
-        <Nav.Link href="#link" className='nav-link order'>ORDER</Nav.Link>
+        <Nav.Link href='/order-page' className='nav-link order'> ORDER </Nav.Link>
         <Nav.Link href="#link" className='nav-link location'>LOCATION</Nav.Link>
         <Nav.Item><img className='call-icon'  src={callIcon} alt='callIcon' /></Nav.Item>
         <Nav.Item>
