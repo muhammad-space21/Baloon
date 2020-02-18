@@ -1,0 +1,30 @@
+.select-button {
+    .select-btn {
+        width: 80px;
+        height: 40px;
+        background-color: #17D269;
+        border-color:#17D269;
+        border-radius: 10px;
+        border: none;
+        box-shadow: 3px 3px 6px #00000046;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            background-color: #48DE8A;
+            border-color: #48DE8A;
+            box-shadow: 3px 3px 6px #00000046;
+        }
+
+        &:focus {
+            background-color: #2AB868;
+            border-color: #2AB868;
+            box-shadow: 3px 3px 6px #00000046;
+        }
+        .tick-icon {
+            width: 20px;
+            height: 20px;
+        }
+    }
+}

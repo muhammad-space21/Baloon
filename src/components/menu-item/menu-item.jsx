@@ -2,7 +2,7 @@ import React from 'react';
 
 import './menu-item.styles.scss';
 
-import MenuButton from '../menu-button/menu-button';
+import ButtonMenu from '../button-menu/button-menu';
 
 const MenuItem = ({item}) => {
     const { name } = item;
@@ -14,7 +14,7 @@ const MenuItem = ({item}) => {
             </div>
             <div className='item-footer'>
                 <h6 className='name'>{name}</h6>
-                <MenuButton  className='custom-button'/>
+                <ButtonMenu  className='custom-button'/>
             </div>
         </div>
     );

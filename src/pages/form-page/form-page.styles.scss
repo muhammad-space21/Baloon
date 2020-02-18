@@ -1,8 +1,62 @@
+$form-page-color: linear-gradient(to bottom left, #009BFF, #68E7A0);
+html {
+    width: 100%;
+}
 .form-page {
     width: 100%;
     height: 610px;
+    position: absolute;
+    margin: 0;
     background-image: url('../../Assets/images/form-page.img.png');
     background-size: cover;
     background-position: center;
-    opacity: 70%;
+    
+
+    .buttons-holder {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        .back-button-container { 
+            margin-left: 10px;
+            margin-right: 10px;
+    }
+    
+    .green-button-container {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    }
+
 };
+@media screen and ( max-width: 414px ) {
+    .form-page {
+        height: 896px;
+        background-image: $form-page-color;
+        .buttons-holder {
+            .green-button-container{
+                .custom-btn {
+                    background-color: #FE6136;
+                    border-color: #FE6136;
+                    color: #F8F5F4;
+                    box-shadow: 3px 3px 6px #00000046;
+        
+                    &:hover {
+                        background-color: #FD9275;
+                        border-color: #FD9275;
+                        color: #FBF8F7;
+                        box-shadow: 3px 3px 6px #00000046;
+                    }
+        
+                    &:focus {
+                        background-color: #E35B35;
+                        border-color: #E35B35;
+                        color: #F8F7F7;
+                        box-shadow: 3px 3px 6px #00000046;
+                    }
+                }
+            }
+        }
+    }
+}

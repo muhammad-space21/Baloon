@@ -1,17 +1,15 @@
 import React from 'react';
 
-import './menu-button.styles.scss';
-
-import { Button } from 'react-bootstrap';
+import './button-menu.styles.scss';
 
 
 
 const MenuButton = () => (
     <div className='menu-button'>
-        <Button
-        variant='primary' 
+        <button
         className='menu-order-button' 
-        > ORDER </Button>
+        > ORDER 
+        </button>
         
     </div>
 );

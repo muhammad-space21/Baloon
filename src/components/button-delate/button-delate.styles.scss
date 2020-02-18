@@ -1,0 +1,32 @@
+.button-delate {
+    .btn-delate {
+        width: 80px;
+        height: 40px;
+        background-color: #FE6136;
+        border-color:#FE6136;
+        border-radius: 10px;
+        border: none;
+        box-shadow: 3px 3px 6px #00000046;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            background-color: #FD9275;
+            border-color: #FD9275;
+            box-shadow: 3px 3px 6px #00000046;
+        }
+
+        &:focus {
+            background-color: #E35B35;
+            border-color: #E35B35;
+            box-shadow: 3px 3px 6px #00000046;
+        }
+
+
+        .delate-icon {
+            width: 20px;
+            height: 20px;
+        }
+    }
+}

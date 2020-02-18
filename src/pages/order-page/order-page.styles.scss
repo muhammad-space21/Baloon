@@ -1,3 +1,18 @@
 .order-page {
     font-family: 'Rubik', sans-serif;
+
+    .order-page-body {
+        background-color: #EEF9FF;
+        width: 100%;
+        height: 800px; //c
+
+        .back-button-container { 
+            margin-left: 56rem;
+            position: absolute;
+        }
+        
+        .green-button-container {
+            margin-left: 65rem;
+        }
+    }
 }

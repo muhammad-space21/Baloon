@@ -1,0 +1,29 @@
+.button-green {
+    .button-green-custom {
+        width: 114px;
+        height: 40px;
+        border-radius: 7px;
+        background-color: #17D269;
+        border-color: #17D269;
+        color: white;
+        font-size: 12px;
+        font-weight: 500;
+        box-shadow: 3px 3px 6px #00000046;
+        border: none;
+
+        &:hover {
+            background-color: #48DE8A;
+            border-color: #48DE8A;
+            color: #F1F6F3;
+            cursor: pointer;
+        }
+        &:focus {
+            background-color: #2AB868;
+            border-color:#2AB868;
+            color: #F7FDFA;
+            cursor: pointer;
+            box-shadow: 3px 3px 6px #00000046;
+
+        } 
+    }
+}

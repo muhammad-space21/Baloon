@@ -1,4 +1,15 @@
 .search-result-page {
     font-family: 'Rubik', sans-serif;
-    background-color: #EEF9FF;
+
+    .search-page-body {
+        background-color: #EEF9FF;
+        width: 100%;
+        height: 500px;
+
+
+        .back-button-container {
+            margin-left: 66rem;
+            margin-bottom: 50px;
+        }
+    }
 };

@@ -5,7 +5,7 @@ import './form.styles.scss';
 
 
 
-class FormOrder extends React.Component {
+class OrderForm extends React.Component {
 
     constructor () {
         super();
@@ -25,4 +25,4 @@ class FormOrder extends React.Component {
 };
 
 
-export default FormOrder;
+export default OrderForm;

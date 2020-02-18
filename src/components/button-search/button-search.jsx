@@ -1,17 +1,14 @@
 import React from 'react';
 
-import './search-button.styles.scss';
-
-import { Button } from 'react-bootstrap';
+import './button-search.styles.scss';
 
 import searchIcon from '../../Assets/Icons/search11.png';
 
 
 const ButtonSearch = () => (
     <div className='button-search'>
-        <Button 
+        <button
         className='button-primary' 
-        variant='primary' 
         name='button'> 
         <img 
         className='search-icon'
@@ -19,7 +16,7 @@ const ButtonSearch = () => (
         alt='searchIcon'
         />
         SEARCH
-        </Button>
+        </button>
     </div>
 );
 

@@ -1,7 +1,6 @@
 import React from 'react';
 
 
-
 class ApiRequest extends React.Component {
     constructor(props) { 
         super(props);
@@ -12,16 +11,15 @@ class ApiRequest extends React.Component {
         }
     }
 
-        
 
 
     componentWillMount() {
         fetch('https://jsonplaceholder.typicode.com/users')
             .then(res => res.json())
-            .then(json => {
+            .then(data => {
                 this.setState({ 
                     loading: false,
-                    product: json
+                    product: data
                 })
             })
     };

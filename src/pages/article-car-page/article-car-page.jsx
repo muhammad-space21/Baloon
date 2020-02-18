@@ -9,7 +9,6 @@ import BackButton from '../../components/back-button/back-button';
 
 
 
-
 const ArticleCarPage = () => (
     <div className='article-car-page'>
         <NavbarMain />
@@ -24,7 +23,9 @@ const ArticleCarPage = () => (
                     Etiam tempor orci <span className='text-highlighted'>incididunt</span> eu lobortis elementum. Sem et tortor consequat id. Nullam vehicula ipsum a arcu cursus. Lobortis mattis aliquam faucibus purus in massa tempor nec feugiat. Eleifend quam  <span className='text-highlighted'>incididunt</span> adipiscing vitae proin sagittis. Arcu non sodales neque sodales. Nunc eget lorem dolor sed. Eu lobortis elementum nibh tellus molestie nunc. Tempor orci eu lobortis elementum nibh tellus molestie. Tincidunt <span className='text-highlighted'>incididunt</span> nunc pulvinar sapien et ligula ullamcorper malesuada. Magna eget est lorem ipsum dolor sit. Interdum velit laoreet id donec ultrices tincidunt arcu non. Magnis dis parturient montes nascetur ridiculus <span className='text-highlighted'>incididunt</span>  mus mauris. Morbi tristique senectus et netus et malesuada fames ac. Curabitur vitae nunc sed velit. Diam donec adipiscing tristique risus nec feugiat in fermentum. Sapien eget mi proin sed libero enim sed faucibus turpis. Quisque non tellus orci ac auctor <span className='text-highlighted'>incididunt</span> augue mauris augue.
                 </p>
             </div>
-            <BackButton />
+            <div className='back-button-container'>
+                <BackButton />
+            </div>
         <Footer />
     </div>
 );

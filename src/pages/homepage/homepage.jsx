@@ -3,7 +3,7 @@ import React from 'react';
 import './homepage.styles.scss';
 
 import Header from '../../components/header/header';
-import ApiRequest from '../../components/api-request';
+// import ApiRequest from '../../components/api-request';
 
 import BrandsContainer from '../../components/brands-container/brands-container';
 import Menu from '../../components/Menu/menu';
@@ -16,7 +16,7 @@ import Footer from '../../components/footer/footer';
 const Homepage = () => (
     <div className='homepage'>
         <Header />
-        <ApiRequest />
+        {/* <ApiRequest /> */}
         <BrandsContainer />
         <Menu />
         <SeeMoreBtn />

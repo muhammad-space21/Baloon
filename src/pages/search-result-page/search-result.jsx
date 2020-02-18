@@ -3,12 +3,18 @@ import React from 'react';
 import './search-result.styles.scss';
 
 import NavbarMain from '../../components/navbar/navbar';
+import BackButton from '../../components/back-button/back-button';
 import Footer from '../../components/footer/footer';
 
 
 const SearchResultPage = () => (
     <div className='search-result-page'>
         <NavbarMain />
+        <div className='search-page-body'>
+        <div className='back-button-container'>
+            <BackButton />
+        </div>
+        </div>
         <Footer />
 
     </div>
