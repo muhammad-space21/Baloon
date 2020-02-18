@@ -6,6 +6,15 @@
         width: 100%;
         height: 800px; //c
 
+        .title {
+            h1 {
+                font-size: 25px;
+                color: #5F84B1;
+                margin-left: 70px;
+                padding-top: 100px;
+            }
+        }
+
         .back-button-container { 
             margin-left: 56rem;
             position: absolute;

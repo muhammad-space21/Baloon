@@ -14,6 +14,9 @@ const OrderPage = () => (
     <div className='order-page'>
         <NavbarMain />
         <div className='order-page-body'>
+            <div className='title'>
+                <h1>Order Page</h1>
+            </div>
             <SelectButton />
             <ButtonDelate />
             <div className='back-button-container'>

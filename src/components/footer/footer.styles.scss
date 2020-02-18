@@ -25,23 +25,16 @@ $btn-shadow: 3px 3px 20px $primary-blue;
     height: 100%;
     background-color: #274596;
     
-    .message-form {
-        margin-top: 50px;
-        //margin-left: 5rem;
-        @media screen and ( min-width: 576px) {
-            margin-right: 80px;
-        }
-        @media screen and ( max-width: 576px) {
-            margin-left: 30px;
-        }
-    }
-
     h1 {
         margin-top: 50px;
         font-size: 20px;
         color: white;
         @media screen and ( max-width: 576px) {
-            margin-left: 50px;
+            margin-left: 30px;
+        }
+        @media screen and ( max-width: 414px ) {
+            font-size: 12px;
+            font-weight: 400;
         }
     }
 
@@ -54,83 +47,32 @@ $btn-shadow: 3px 3px 20px $primary-blue;
             cursor: pointer;
         }
         @media screen and ( max-width: 576px) {
-            margin-left: 50px;
+            margin-left: 30px;
+        }
+        @media screen and ( max-width: 414px ) {
+            font-size: 12px;
+            font-weight: 400;
+
         }
     }
 
     .custom {
         margin-top: 30px;
     }
-    .email {
-        width: 360px;
-        height: 50px;
-        border-radius: 15px;
-        border-color: $bg-navbar;
-    }
-    .textarea {
-        width: 360px;
-        height: 80px;
-        margin-top: 30px;
-        border-radius: 15px;
-        border-color: $bg-navbar;
-        &::placeholder {
-            font-size: 14px;
-            padding-left: 10px;
-            padding-top: 10px;
-        }
-    }
-    .email, .textarea {
-        &:hover {
-            border-color: $color-footer;
-            cursor: pointer;
-            &::placeholder {
-                color: $color-footer;
-            }
-        }
-        &:focus {
-            box-shadow: $btn-shadow;
-        }
-        &::placeholder {
-            font-size: 14px;
-            padding-left: 10px;
-            color: $bg-navbar;
-            font-family: 'Rubik', sans-serif;
-
-        }
-    }
+    
+    
     h6 {
         color: white;
         font-size: 12px;
         padding-bottom: 20px;
         padding-top: 50px;
-    }
-    .social-icons {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-end;
-        margin-top: -14rem;
-        margin-left: 28rem;
-        position: absolute;
-
-        .telegram {
-            margin-top: 50px;
-        }
-        
-        img {
-            width: 30px;
-            height: 30px;
-            margin-top: 20px;
-
-            &:hover {
-                width: 32px;
-                height: 32px;
-            }
-        }
-        @media screen and ( max-width: 576px) {
-            margin-left: 26rem;
+        @media screen and ( max-width: 414px ) {
+            font-size: 9px;
+            font-weight: 400;
         }
     }
+    
+    
     .button-custom {
         margin-left: 15rem;
         margin-top: 20px;

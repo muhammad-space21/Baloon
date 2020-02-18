@@ -11,12 +11,12 @@ const AboutUsSection = () => (
     <div className='about-us'>
         <Container>
             <Row>
-                <Col>
+                <Col xl={6} lg={6} md={6} sm={12} xs={12} >
                     <div className='image-one-container'>
                         <img className='image-first' src={imageFirst} alt="About us"/>
                     </div>
                 </Col>
-                <Col>
+                <Col xl={6} lg={6} md={6} sm={12} xs={12} >
                 <div className='paragraph'>
                     <p className='p1'>
                         Lorem ipsum dolor sit amet, consectetur adipiscing 
@@ -26,12 +26,12 @@ const AboutUsSection = () => (
                         facilisis sed. At lectus urna duis convallis convallis. 
                         Faucibus ornare suspendisse sed nisi lacus sed 
                         viverra tellus in. In nibh mauris cursus mattis. 
-                        </p>
+                    </p>
                 </div>
                 </Col>
             </Row>
             <Row>
-            <Col>
+            <Col xl={6} lg={6} md={6} sm={12} xs={12} >
             <div className='paragraph'>
                     <p className='p2'>
                         Lorem ipsum dolor sit amet, consectetur adipiscing 
@@ -44,7 +44,7 @@ const AboutUsSection = () => (
                         </p>
                 </div>
                 </Col>
-                <Col>
+                <Col xl={6} lg={6} md={6} sm={12} xs={12} >
                     <div className='image-two-container'>
                         <img className='image-second'  src={imageSecond} alt="About us"/>
                     </div>

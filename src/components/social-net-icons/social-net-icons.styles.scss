@@ -1,0 +1,23 @@
+
+    .social-icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        margin-top: -100px;
+
+        .telegram {
+            margin-top: 50px;
+        }
+        
+        img {
+            width: 30px;
+            height: 30px;
+            margin-top: 20px;
+
+            &:hover {
+                width: 32px;
+                height: 32px;
+            }
+        }
+    }

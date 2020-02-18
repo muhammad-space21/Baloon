@@ -6,7 +6,7 @@ import Header from '../../components/header/header';
 // import ApiRequest from '../../components/api-request';
 
 import BrandsContainer from '../../components/brands-container/brands-container';
-import Menu from '../../components/Menu/menu';
+// import Menu from '../../components/Menu/menu';
 import SeeMoreBtn from  '../../components/see-more-btn/see-more-btn';
 import MarketingPage from '../../components/marketing-page/marketing-page';
 import AboutUsSection from '../../components/about-us/about-us';
@@ -18,7 +18,7 @@ const Homepage = () => (
         <Header />
         {/* <ApiRequest /> */}
         <BrandsContainer />
-        <Menu />
+        {/* <Menu /> */}
         <SeeMoreBtn />
         <MarketingPage />
         <AboutUsSection />

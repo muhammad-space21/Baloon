@@ -23,9 +23,15 @@ $form-page-color: linear-gradient(to bottom right, #009BFF, #68E7A0);
     width: 100%;
     height: 100%;
     background-color: #FDFDFD;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+
+    @media screen and ( max-width: 414px ) {
+        .card-one, .card-two, .card-three {
+            width: 280px;
+            height: 224px;
+        }
+    }
 
     p {
         font-size: 14px;
@@ -45,8 +51,8 @@ $form-page-color: linear-gradient(to bottom right, #009BFF, #68E7A0);
         background-image: $marketing-card-one;
         border: none;
         border-radius: 12px;
-        margin-top: 150px;
-        margin-bottom: 150px;
+        margin-top: 40px;
+        margin-bottom: 40px;
 
         img {
             width: 80px;
@@ -64,8 +70,8 @@ $form-page-color: linear-gradient(to bottom right, #009BFF, #68E7A0);
         background-image: $marketing-card-two;
         border: none;
         border-radius: 12px;
-        margin-top: 150px;
-        margin-bottom: 150px;
+        margin-top: 40px;
+        margin-bottom: 40px;
 
         img {
             width: 70px;
@@ -73,6 +79,7 @@ $form-page-color: linear-gradient(to bottom right, #009BFF, #68E7A0);
         }
 
     }
+    
     .card-three {
         width: 300px;
         height: 210px;
@@ -83,13 +90,12 @@ $form-page-color: linear-gradient(to bottom right, #009BFF, #68E7A0);
         background-image: $marketing-card-three;
         border: none;
         border-radius: 12px;
-        margin-top: 150px;
-        margin-bottom: 150px;
+        margin-top: 40px;
+        margin-bottom: 40px;
 
         img {
             width: 70px;
             height: 70px;
         }
-
     }
 }

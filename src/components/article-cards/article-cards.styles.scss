@@ -13,7 +13,7 @@ $marketing-card-two: linear-gradient(to bottom right, #FEB47B, #FF7E5F);
 $marketing-card-two: linear-gradient(to bottom right, #02AAB0, #00CDAC);
 $header-color: linear-gradient(#39A8E0, #193C79);
 $article-one: linear-gradient( to bottom right, #6A71D8, #764BA2); // opacity
-$article-two: linear-gradient(to bottom right, #CC2B5E, 52%, #CC2B5E); // opacity
+$article-two: linear-gradient(to bottom right, #CC2B5E, #CC2B5E); // opacity
 $neu-morphism: 12px 12px 12px, hsl(0, 1%, 66% ),    //opacity
                 -12px, -12px, 12px rgb(255, 250, 250);
 $card-description: 0, 18px, 36px, #000000, 16%; // opacity
@@ -42,6 +42,10 @@ $form-page-color: linear-gradient(to bottom right, #009BFF, #68E7A0);
             font-style: italic;
             margin-top: -23rem;
             margin-left: 40px;
+            @media screen and ( max-width: 414px ) {
+                font-size: 35px;
+                margin-top: -20rem;
+            }
         
         }
         span {
@@ -49,6 +53,9 @@ $form-page-color: linear-gradient(to bottom right, #009BFF, #68E7A0);
             font-weight: 600;
             color: #FFFF01;
             font-style: italic;
+            @media screen and ( max-width: 414px ) {
+                font-size: 50px;
+            }
         }
         @media screen and (max-width: 576px)  {
             margin-bottom: 50px;
@@ -74,6 +81,11 @@ $form-page-color: linear-gradient(to bottom right, #009BFF, #68E7A0);
             font-style: italic;
             margin-top: -23rem;
             margin-left: 40px;
+            @media screen and ( max-width: 414px ) {
+                font-size: 35px;
+                margin-top: -20rem;
+
+            }
 
         }
         span {
@@ -81,6 +93,9 @@ $form-page-color: linear-gradient(to bottom right, #009BFF, #68E7A0);
             font-weight: 600;
             color: #FFFF01;
             font-style: italic;
+            @media screen and ( max-width: 414px ) {
+                font-size: 50px;
+            }
 
         }
     }

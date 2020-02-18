@@ -1,6 +1,15 @@
 .description-page {
     font-family: 'Rubik', sans-serif;
 
+    .title {
+        h1 {
+            font-size: 25px;
+            color: #5F84B1;
+            margin-left: 70px;
+            margin-top: 100px;
+        }
+    }
+
     .back-button-container { 
         margin-left: 56rem;
         position: absolute;

@@ -11,6 +11,9 @@ const SearchResultPage = () => (
     <div className='search-result-page'>
         <NavbarMain />
         <div className='search-page-body'>
+        <div className='title'>
+                <h1>Search Results' Page</h1>
+            </div>
         <div className='back-button-container'>
             <BackButton />
         </div>

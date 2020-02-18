@@ -3,13 +3,10 @@ import React from 'react';
 import './footer.styles.scss';
 
 import { Container, Row, Col, Form } from 'react-bootstrap';
-import ButtonFormBack from '../button-form-back/button-form-back';
+
+import FormMessage from '../form-message/form-message';
 
 
-import telegramIcon from '../../Assets/Icons/telegram.png';
-import instagramIcon from '../../Assets/Icons/instagram.png';
-import facebookIcon from '../../Assets/Icons/facebook.png';
-import skypeIcon  from '../../Assets/Icons/skype.custom.PNG';
 
 
 class Footer extends React.Component {
@@ -32,21 +29,7 @@ class Footer extends React.Component {
                             <h4>Location</h4>
                         </Col>
                         <Col xl lg md={4} sm xs={6} xl lg md={{order: 3}} sm xs={{order: 1}}>
-                            <Form className='message-form'>
-                                <Form.Group controlId="formBasicEmail" >
-                                    <Form.Control className='email' type="email" placeholder="Email" />
-                                </Form.Group>
-                                <Form.Group controlId="exampleForm.ControlTextarea1">
-                                    <Form.Control as="textarea" rows="2" className='textarea' placeholder="Message..." />
-                                </Form.Group>
-                            </Form>
-                                <div className='social-icons'>
-                                    <img className='telegram' src={telegramIcon} alt="telegramIcon"/>         
-                                    <img src={instagramIcon} alt="instagramIcon"/>                    
-                                    <img src={facebookIcon} alt="facebookIcon"/>                    
-                                    <img src={skypeIcon} alt="skypeIcon"/>                    
-                                </div>
-                                <ButtonFormBack  className='button-custom'/>
+                            <FormMessage />
                         </Col>
                     </Row>
                     <h6>Copyright © 1998-2020 Focus Technology Co., Ltd. All Rights Reserved.</h6>
