@@ -10,18 +10,28 @@
             h1 {
                 font-size: 25px;
                 color: #5F84B1;
-                margin-left: 70px;
                 padding-top: 100px;
             }
         }
 
-        .back-button-container { 
-            margin-left: 56rem;
-            position: absolute;
-        }
         
-        .green-button-container {
-            margin-left: 65rem;
+        
+        .buttons-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+            
+            .buttons {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: -28rem;
+                .back-button-custom, .btn-back {
+                    margin-right: 20px;
+                }
+            }
         }
     }
 }
