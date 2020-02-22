@@ -12,7 +12,7 @@ class ButtonFormBack extends React.Component {
                 onClick={this.handleClick}
                 
                 >
-                BACK
+                Submit
                 </button>
                 
             </div>

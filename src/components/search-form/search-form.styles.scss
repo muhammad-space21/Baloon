@@ -12,6 +12,13 @@ $btn-shadow: 3px 3px 20px $bg-navbar;
 .form-inputs {
     width: 100%;
     height: 100%;
+
+    .button-search-holder {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
     
     
     .width-input, .height-input, .radius-input {
@@ -31,6 +38,14 @@ $btn-shadow: 3px 3px 20px $bg-navbar;
             }
             &:focus {
                 box-shadow: $btn-shadow;
+            }
+
+            .option {
+                color: $color-footer !important; 
+                font-size: 16px !important;
+                &:hover {
+                    background-color: $table-grey !important;
+                }
             }
 
             // @media screen and ( max-width: 414px ) {
