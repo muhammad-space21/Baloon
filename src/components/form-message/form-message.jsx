@@ -26,20 +26,20 @@ class FormMessage extends React.Component {
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
-    handleChange({target}) {
+    handleChange ({target}) {
         this.setState({
             [target.name]: target.value
         })
     }
 
 
-    handleSubmit(e) {
+    handleSubmit = e => {
         e.preventDefault();
         const email = this.state.email;
         const message =  this.state.message;
-        const output = 'Email: ' + email; 
-                        'Message: ' + message;
-        console.log(output);
+        
+        console.log('Email: ' + email, 
+                    'Message: ' + message);
 
     } 
 
@@ -59,7 +59,7 @@ class FormMessage extends React.Component {
                     type="email"
                     name='email' 
                     onChange={this.handleChange} 
-                    placeholder="Email" 
+                    placeholder="Email"
                     required
                     />
                     </Form.Group>
