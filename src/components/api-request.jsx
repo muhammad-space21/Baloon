@@ -2,45 +2,49 @@ import React from 'react';
 
 
 class ApiRequest extends React.Component {
+
     constructor(props) { 
         super(props);
 
         this.state = {
-            loading: true,
-            product: []
+            isLoaded: false,
+            items: []
         }
-    }
+    };
 
 
 
-    componentWillMount() {
-        fetch('https://jsonplaceholder.typicode.com/users')
+    componentDidMount() {
+        const url = 'https://61de6a5a.ngrok.io'
+        fetch('https://cors-anywhere.herokuapp.com/' + url )
             .then(res => res.json())
-            .then(data => {
+            .then(json => {
                 this.setState({ 
-                    loading: false,
-                    product: data
+                    isLoaded: true,
+                    items: json
                 })
             })
     };
 
     
     render() {
-        const { loading, product } = this.state;
-        return(
-            <div>
-                {   
-                this.state.loading || !this.state.product
-                    ? 
-                    (  <div>Loading...</div>)
-                    : 
-                    (<div>{this.state.product.name}</div>)
-                    (<div>{this.state.product.username}</div>)
-                    (<div>{this.state.product.email}</div>)
-                    
-                }
-            </div>
-        );
+        const { isLoaded, items } = this.state;
+        
+        if (!isLoaded) {
+            return <div>Loading...</div>
+        } else {
+            return(
+                <div>
+                    <ul>
+                        {items.map(item => (
+                            <li key={item.id}>
+                                Title: {item.title} | Code: {item.code}
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            );
+        }
     };
 };
 

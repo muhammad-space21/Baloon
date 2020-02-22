@@ -4,19 +4,18 @@ import './menu-preview.styles.scss';
 
 import MenuItem from '../menu-item/menu-item';
 
+
 import { Container } from 'react-bootstrap';
 
 
-const MenuPreview = ({ items }) => (
-
+const MenuPreview = ({ tyre }) => (
             <Container>
                 <div className='menu-preview'>
                     <div className='preview'>
-                            {items
-                                .filter(( item, idx ) => idx < 3 )
-                                .map(item  => 
-                                    <MenuItem  key={item.id} item={item} />)
-                            }
+                            {tyre
+                            .map((tyre) => (
+                                <MenuItem key={tyre.id} tyre={tyre} />
+                            ))}
                     </div>
                 </div>
             </Container>

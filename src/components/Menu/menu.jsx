@@ -2,33 +2,48 @@ import React from 'react';
 
 import './menu.styles.scss';
 
-import PRODUCT_DATA from './product-data';
 import MenuPreview from '../menu-preview/menu-preview';
+import SeeMoreBtn from '../see-more-btn/see-more-btn';
 
 
 class Menu extends React.Component {
     constructor(props) {
         super(props);
 
-        this.state= {
-            collections: PRODUCT_DATA
+        this.state = {
+            tyres_array: [],
+            isLoaded: false
         }
 
     }
 
+    componentDidMount() {
+        const url = 'https://61de6a5a.ngrok.io';
+        fetch('https://cors-anywhere.herokuapp.com/' + url)
+            .then(res => res.json())
+            .then(data => {
+                this.setState({ 
+                    isLoaded: true,
+                    tyres_array: data
+                })
+            })
+    };
+
+
     render() {
-        const { collections } = this.state;
+        const { isLoaded, tyres_array } = this.state;
         return (
             <div className='menu'>
                 {
-                    collections.map(({ id, ...otherCollectionProps }) => (
-                        <MenuPreview key={id} {...otherCollectionProps} />
+                    tyres_array.map(({ id, ...otherTyreProps }) => (
+                        <MenuPreview key={id}  {...otherTyreProps} />
                     ))
                 }
+                <SeeMoreBtn />
             </div>
         );
     };
 };
-    
+
 
 export default Menu;
