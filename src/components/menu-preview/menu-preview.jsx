@@ -8,11 +8,12 @@ import MenuItem from '../menu-item/menu-item';
 import { Container } from 'react-bootstrap';
 
 
-const MenuPreview = ({ tyre }) => (
+const MenuPreview = ({ results }) => (
             <Container>
                 <div className='menu-preview'>
                     <div className='preview'>
-                            {tyre
+                            {results
+                            .filter((tyre, idx) => idx < 3)
                             .map((tyre) => (
                                 <MenuItem key={tyre.id} tyre={tyre} />
                             ))}

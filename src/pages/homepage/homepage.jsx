@@ -4,9 +4,8 @@ import './homepage.styles.scss';
 
 import Header from '../../components/header/header';
 // import ApiRequest from '../../components/api-request';
-
 import BrandsContainer from '../../components/brands-container/brands-container';
-// import Menu from '../../components/Menu/menu';
+import Menu from '../../components/Menu/menu';
 import MarketingPage from '../../components/marketing-page/marketing-page';
 import AboutUsSection from '../../components/about-us/about-us';
 import ArticleCards from '../../components/article-cards/article-cards';
@@ -17,7 +16,7 @@ const Homepage = () => (
         <Header />
         {/* <ApiRequest /> */}
         <BrandsContainer />
-        {/* <Menu /> */}
+        <Menu />
         <MarketingPage />
         <AboutUsSection />
         <ArticleCards />

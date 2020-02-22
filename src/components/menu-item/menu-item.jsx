@@ -4,9 +4,9 @@ import './menu-item.styles.scss';
 
 import ButtonMenu from '../button-menu/button-menu';
 
-const MenuItem = ({id}) => {
+const MenuItem = ({item}) => {
 
-    const { code, image } = id;
+    const { code, image } = item;
 
         return (
             <div className='menu-item'>
@@ -15,11 +15,10 @@ const MenuItem = ({id}) => {
                 </div>
                 <div className='item-footer'>
                     <h6 className='name'>{code}</h6>
-                    <ButtonMenu  className='custom-button'/>
+                    <ButtonMenu className='custom-button'/>
                 </div>
             </div>
         );
-    
 
     }; 
 

@@ -15,7 +15,7 @@ class ApiRequest extends React.Component {
 
 
     componentDidMount() {
-        const url = 'https://61de6a5a.ngrok.io'
+        const url = 'https://03cd7d99.ngrok.io'
         fetch('https://cors-anywhere.herokuapp.com/' + url )
             .then(res => res.json())
             .then(json => {
@@ -36,11 +36,6 @@ class ApiRequest extends React.Component {
             return(
                 <div>
                     <ul>
-                        {items.map(item => (
-                            <li key={item.id}>
-                                Title: {item.title} | Code: {item.code}
-                            </li>
-                        ))}
                     </ul>
                 </div>
             );
