@@ -4,6 +4,8 @@ import './form.styles.scss';
 
 import { Form } from 'react-bootstrap';
 
+import axios from 'axios'; 
+
 import BackButton from '../../components/back-button/back-button';
 import ButtonGreen from '../../components/button-green/button-green';
 
@@ -27,10 +29,10 @@ class OrderForm extends React.Component {
 }
 
 
-handleChange({target}) {
+handleChange = e => {
 
     this.setState({
-        [target.name]: target.value 
+        [e.target.name]: e.target.value 
         });
 
 }
@@ -38,19 +40,20 @@ handleChange({target}) {
 handleSubmit = e => {
     e.preventDefault();
 
-    const fullname = this.state.full_name;
-    const number = this.state.tel_number;
-    const address = this.state.address;
-
-    console.log('Fullname: ' + fullname,
-                'Number: ' + number, 
-                'Address: ' + address  );
+    console.log(this.state);
 
 
+    axios.post('https://jsonplaceholder.typecode.com/posts', this.state )
+        .then(response => {
+            console.log(response)
+        })
+        .catch(error => {
+            console.log(error)
+        })
 }
 
-
     render () {
+        const { full_name, tel_number, address } = this.state;
 
         return (
             <div className='form'>
@@ -61,6 +64,7 @@ handleSubmit = e => {
                         name='full_name'
                         className='full-name'
                         placeholder="Fullname"
+                        value={full_name}
                         onChange={this.handleChange}
                         required
                         />
@@ -71,6 +75,7 @@ handleSubmit = e => {
                         name='tel_number'
                         className='number'
                         placeholder="Telephone number"
+                        value={tel_number}
                         onChange={this.handleChange}
                         required
                         />
@@ -80,7 +85,8 @@ handleSubmit = e => {
                         type="text"
                         name='address'
                         className='address'
-                        placeholder="Address" 
+                        placeholder="Address"
+                        value={address}
                         onChange={this.handleChange}
                         required
                         />

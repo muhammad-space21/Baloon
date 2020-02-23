@@ -4,6 +4,8 @@ import './form-message.styles.scss';
 
 import { Form } from 'react-bootstrap';
 
+import axios from 'axios';
+
 import ButtonFormBack from '../button-form-back/button-form-back';
 import SocialIcons from '../social-net-icons/social-net-icons';
 
@@ -26,20 +28,25 @@ class FormMessage extends React.Component {
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
-    handleChange ({target}) {
+    handleChange = e => {
         this.setState({
-            [target.name]: target.value
+            [e.target.name]: e.target.value
         })
     }
 
 
     handleSubmit = e => {
         e.preventDefault();
-        const email = this.state.email;
-        const message =  this.state.message;
-        
-        console.log('Email: ' + email, 
-                    'Message: ' + message);
+
+        console.log(this.state);
+
+        axios.post('https://jsonplaceholder.typecode.com/posts', this.state )
+        .then(response => {
+            console.log(response)
+        })
+        .catch(error => {
+            console.log(error)
+        })
 
     } 
 

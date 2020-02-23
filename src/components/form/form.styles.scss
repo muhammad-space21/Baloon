@@ -1,3 +1,12 @@
+$bg-navbar: #39A8E0;
+$bg-body: #EEF9FF;
+$primary-btn:#FE6136;
+$primary-blue: #009BFF;
+$btn-green: #17D269;
+$btn-back: #5F84B1;
+$color-footer: #274596;
+$table-blue: #D6EEFB;
+$table-grey: #DEE7EC;
 .form {
     display: flex;
     flex-direction: column;
@@ -52,7 +61,9 @@
             border-color: #274596;
             cursor: pointer;
             &::placeholder {
-                color: #274596;
+                color: $color-footer;
+                font-style: italic;
+                font-size: 12px;
             }
         }
     }
