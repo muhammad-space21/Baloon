@@ -18,7 +18,7 @@ class Menu extends React.Component {
     }
 
     componentDidMount() {
-        const url = ' https://03cd7d99.ngrok.io';
+        const url = 'https://bbb4f3c5.ngrok.io';
         fetch('https://cors-anywhere.herokuapp.com/' + url)
             .then(res => res.json())
             .then(data => {
@@ -34,11 +34,12 @@ class Menu extends React.Component {
         const { isLoaded, tyres_array } = this.state;
         return (
             <div className='menu'>
-                {
+                {/* {
                     tyres_array.map(({ id, ...otherTyreProps }) => (
                         <MenuPreview key={id}  {...otherTyreProps} />
-                    )) ? <div>data is loaded</div> : null
-                }
+                    ))
+                } */}
+        
                 <SeeMoreBtn />
             </div>
         );

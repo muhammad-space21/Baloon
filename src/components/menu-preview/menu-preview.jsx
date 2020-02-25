@@ -13,9 +13,9 @@ const MenuPreview = ({ results }) => (
                 <div className='menu-preview'>
                     <div className='preview'>
                             {results
-                            .filter((tyre, idx) => idx < 3)
-                            .map((tyre) => (
-                                <MenuItem key={tyre.id} tyre={tyre} />
+                            // .filter((tyre, idx) => idx < 3)
+                            .map(({id, ...otherTyreProps }) => (
+                                <MenuItem key={id} {...otherTyreProps} />
                             ))}
                     </div>
                 </div>

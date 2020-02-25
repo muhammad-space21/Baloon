@@ -6,8 +6,6 @@ import NavbarMain from '../../components/navbar/navbar';
 import BackButton from '../../components/back-button/back-button';
 import Footer from '../../components/footer/footer';
 
-import MenuPreview from '../../components/menu-preview/menu-preview';
-
 
 const SearchResultPage = () => (
     <div className='search-result-page'>

@@ -4,9 +4,9 @@ import './menu-item.styles.scss';
 
 import ButtonMenu from '../button-menu/button-menu';
 
-const MenuItem = ({item}) => {
+const MenuItem = ({results}) => {
 
-    const { code, image } = item;
+    const { code, image } = results;
 
         return (
             <div className='menu-item'>
