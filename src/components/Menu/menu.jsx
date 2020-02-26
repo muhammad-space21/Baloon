@@ -2,7 +2,7 @@ import React from 'react';
 
 import './menu.styles.scss';
 
-import MenuPreview from '../menu-preview/menu-preview';
+// import MenuPreview from '../menu-preview/menu-preview';
 import SeeMoreBtn from '../see-more-btn/see-more-btn';
 
 
@@ -18,29 +18,27 @@ class Menu extends React.Component {
     }
 
     componentDidMount() {
-        const url = 'https://bbb4f3c5.ngrok.io';
+        const url = 'https://66dc2247.ngrok.io/';
         fetch('https://cors-anywhere.herokuapp.com/' + url)
             .then(res => res.json())
-            .then(data => {
-                this.setState({ 
-                    isLoaded: true,
-                    tyres_array: data
-                })
-            })
+            .then(data => this.setState({
+                tyres_array: data
+            }))
+    
     };
 
 
     render() {
-        const { isLoaded, tyres_array } = this.state;
+        const { tyres_array } = this.state
+        
         return (
             <div className='menu'>
-                {/* {
-                    tyres_array.map(({ id, ...otherTyreProps }) => (
-                        <MenuPreview key={id}  {...otherTyreProps} />
-                    ))
-                } */}
-        
-                <SeeMoreBtn />
+                <ul>
+                    { tyres_array.map(tyre => (
+                        <li key={tyre.id}>{tyre.code}</li>
+                    ))}
+                </ul>
+                <SeeMoreBtn/>
             </div>
         );
     };
