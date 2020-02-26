@@ -40,7 +40,7 @@ class FormMessage extends React.Component {
 
         console.log(this.state);
 
-        axios.post('https://jsonplaceholder.typecode.com/posts', this.state )
+        axios.post('https://jsonplaceholder.typicode.com/posts', this.state)
         .then(response => {
             console.log(response)
         })
