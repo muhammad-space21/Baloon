@@ -12,34 +12,32 @@ class Menu extends React.Component {
         super(props);
 
         this.state = {
-            tyres_array: [],
-            isLoaded: false
+            tyres_array:[]
         }
-
     }
 
+
     componentDidMount() {
-        const url = 'https://203a9dc7.ngrok.io';
+        const url = 'https://b113b2ad.ngrok.io';
         fetch('https://cors-anywhere.herokuapp.com/' + url)
             .then(res => res.json())
             .then(data => this.setState({
                 tyres_array: data
             }))
-    
     }
 
 
     render() {
         const { tyres_array } = this.state
-        
+
         return (
             <div className='menu'>
                     { tyres_array
-                        .map(({id, ...otherPreviewProps}) => (
-                        <MenuItem key={id} { ...otherPreviewProps } />
-                    ))
+                        .map(({id, ...otherItemProps}) => (
+                            <MenuItem  key={id} { ...otherItemProps } />
+                        ))
                     }
-                <SeeMoreBtn/>
+                <SeeMoreBtn />
             </div>
         );
     };
