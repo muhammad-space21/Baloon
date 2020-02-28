@@ -3,7 +3,6 @@ import React from 'react';
 import './homepage.styles.scss';
 
 import Header from '../../components/header/header';
-// import ApiRequest from '../../components/api-request';
 import BrandsContainer from '../../components/brands-container/brands-container';
 import Menu from '../../components/Menu/menu';
 import MarketingPage from '../../components/marketing-page/marketing-page';
@@ -14,7 +13,6 @@ import Footer from '../../components/footer/footer';
 const Homepage = () => (
     <div className='homepage'>
         <Header />
-        {/* <ApiRequest /> */}
         <BrandsContainer />
         <Menu />
         <MarketingPage />
