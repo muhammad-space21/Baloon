@@ -47,6 +47,10 @@ class FormMessage extends React.Component {
         .catch(error => {
             console.log(error)
         })
+        this.emailInput.value='';
+        this.messageInput.value='';
+
+
 
     } 
 
@@ -64,7 +68,8 @@ class FormMessage extends React.Component {
                     <Form.Control 
                     className='email' 
                     type="email"
-                    name='email' 
+                    name='email'
+                    ref={(input)=>this.emailInput=input} 
                     onChange={this.handleChange} 
                     placeholder="Email"
                     required
@@ -76,7 +81,8 @@ class FormMessage extends React.Component {
                     as="textarea" 
                     rows="2" 
                     className='textarea' 
-                    name='message'                    
+                    name='message'
+                    ref={(input)=>this.messageInput=input} 
                     onChange={this.handleChange}  
                     placeholder="Message..." 
                     required

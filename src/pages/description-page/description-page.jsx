@@ -14,12 +14,12 @@ const DescriptionPage = () => (
         <div className='title'>
             <h1>Description Page</h1>
         </div>
-        <div className='back-button-container'>
-            <BackButton />
-        </div>
-        <div className='green-button-container'>
-            <ButtonGreen />        
-        </div>
+        <div className='buttons-container'>
+                    <div className='buttons'>
+                        <BackButton  className=' back-button-custom btn-back'/>
+                        <ButtonGreen className=' button-green-custom custom-btn btn-green'/>        
+                    </div>
+                </div>
         <Footer />
     </div>
 );

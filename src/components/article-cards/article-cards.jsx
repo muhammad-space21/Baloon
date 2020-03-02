@@ -4,11 +4,14 @@ import  './article-cards.styles.scss';
 
 import { Container, Row, Col } from 'react-bootstrap';
 
+import { Link, useRouteMatch } from 'react-router-dom';
+
 import carImage from '../../Assets/images/Capture1.JPG';
 import truckImage from '../../Assets/images/Capture2.JPG';
 
 
 class ArticleCards extends React.Component {
+
 
 
     render() {
@@ -18,7 +21,7 @@ class ArticleCards extends React.Component {
                     <Row>
                         <Col>
                             <div className='card-body-one'>
-                                <img className='car-image' src={carImage} onClick={this.handleChange} alt="car"  />
+                                <img className='car-image'  src={carImage} onClick={ this.handleClick} alt="car" />
                                 <p className='title'>
                                     PASSENGER CAR 
                                     <br/>

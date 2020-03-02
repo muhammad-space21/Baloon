@@ -49,7 +49,11 @@
         }
     }
     .back-button-container {
-        margin-left: 66rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
         margin-bottom: 50px;
+        margin-right: 100px;
     }
 };

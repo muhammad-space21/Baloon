@@ -22,11 +22,14 @@ $btn-shadow: 3px 3px 20px $primary-blue;
 
 
     .menu-item { 
-        width: 25%;
+        width: 292px;
         height: 370px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-bottom: 50px;
+        margin-top: 50px;
+
     
     
         .menu-item-body {
