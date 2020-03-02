@@ -1,0 +1,80 @@
+$bg-navbar: #39A8E0;
+$bg-body: #EEF9FF;
+$primary-btn:#FE6136;
+$primary-blue: #009BFF;
+$btn-green: #17D269;
+$btn-back: #5F84B1;
+$color-footer: #274596;
+$table-blue: #D6EEFB;
+$table-grey: #DEE7EC;
+$btn-shadow: 3px 3px 20px $bg-navbar;
+
+.ordered-products {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+
+
+    .table {
+        width: 100%;
+        background-color: white;
+        border-radius: 20px;
+        padding-bottom: 50px;
+        .head {
+            color: #5F84B1;
+            font-size: 14px;
+            text-align: center;
+
+            .th {
+                padding-bottom: 20px;
+                padding-top: 20px;
+
+            }
+        }
+        .body {
+            color: #274596;
+            font-size: 12px;
+            font-weight: 500;
+            background-color: #D6EEFB;
+            border: none;
+            padding-bottom: 5px;
+
+            .tr {
+                &:hover {
+                    background-color: rgb(179, 218, 240);
+                    color: #009BFF;
+                }
+                .td {
+                }
+            }
+
+
+            .form-dropdown {
+                border-radius: 20px;
+                .select {
+                    border-color: white;
+                    border-radius: 10px;
+                    height: 40px;
+                    width: 100px;
+                    margin-bottom: -15px;
+                    &:hover {
+                        border-color: $bg-navbar;
+                        cursor: pointer;
+                        &::placeholder {
+                            color: $bg-navbar;
+                        }
+                    }
+                    &:focus {
+                        box-shadow: $btn-shadow;
+                    }
+                }
+
+            }
+
+            .button-holder {
+                background-color: white;
+            }
+        }
+    }
+
+}

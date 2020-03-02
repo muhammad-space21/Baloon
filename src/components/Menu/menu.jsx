@@ -2,7 +2,7 @@ import React from 'react';
 
 import './menu.styles.scss';
 
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 
 // import MenuPreview from '../menu-preview/menu-preview';
 import MenuItem from '../menu-item/menu-item';
@@ -20,7 +20,7 @@ class Menu extends React.Component {
 
 
     componentDidMount() {
-        const url = 'https://80ed8e50.ngrok.io/api/tyres';
+        const url = 'https://78161d90.ngrok.io/api/tyres';
         fetch('https://cors-anywhere.herokuapp.com/' + url)
             .then(res => res.json())
             .then(data => this.setState({
@@ -37,7 +37,7 @@ class Menu extends React.Component {
                 <Container>
                     { tyres_array
                         .map(({id, ...otherItemProps}) => (
-                            <Row><MenuItem as={Col} key={id} { ...otherItemProps } /></Row>
+                            <MenuItem  key={id} { ...otherItemProps } />
                         ))
                     }
                 </Container>

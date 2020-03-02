@@ -9,7 +9,27 @@ import ButtonSelect from '../button-select/button-select';
 
 
 class OrderTable extends React.Component {
+
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            tyres_array:[]
+        }
+    }
+
+
+    componentDidMount() {
+        const url = 'https://78161d90.ngrok.io/api/tyres';
+        fetch('https://cors-anywhere.herokuapp.com/' + url)
+            .then(res => res.json())
+            .then(data => this.setState({
+                tyres_array: data
+            }))
+    }
+
     render() {
+        const { tyres_array } = this.state;
         return (
             <div className='order-table'>
                 <Container>
@@ -41,7 +61,6 @@ class OrderTable extends React.Component {
                                 weight
                             </th>
                             <th className='th'>
-                        
                             </th>
                             </tr>
                         </thead>
@@ -74,31 +93,6 @@ class OrderTable extends React.Component {
                             <td className='td'>Table cell</td>
                             <td className='td'>Table cell</td>
                             <td className='button-holder'><ButtonSelect /></td>
-
-                            </tr>
-                            <tr className='tr'>
-                            <td></td>
-                            <td className='td'>Table cell</td>
-                            <td className='td'>Table cell</td>
-                            <td className='td'>Table cell</td>
-                            <td className='td'>Table cell</td>
-                            <td className='td'>Table cell</td>
-                            <td className='td'>Table cell</td>
-                            <td className='td'>Table cell</td>
-                            <td className='button-holder'><ButtonSelect /></td>
-
-                            </tr>
-                            <tr className='tr'>
-                            <td></td>
-                            <td className='td'>Table cell</td>
-                            <td className='td'>Table cell</td>
-                            <td className='td'>Table cell</td>
-                            <td className='td'>Table cell</td>
-                            <td className='td'>Table cell</td>
-                            <td className='td'>Table cell</td>
-                            <td className='td'>Table cell</td>
-                            <td className='button-holder'><ButtonSelect /></td>
-
                             </tr>
                         </tbody>
                     </Table>

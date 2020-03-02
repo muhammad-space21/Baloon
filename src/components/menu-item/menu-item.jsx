@@ -13,7 +13,7 @@ class MenuItem extends React.Component {
         return (
             <div className='menu-item'>
                 <div className='menu-item-body'>
-                        {/* <div className='image' style={{backgroundImage: `url(${images[0]['image']})` }}></div> */}
+                        <div className='image' style={{backgroundImage: `url(${this.props.images.image})` }}></div>
                 </div>
                 <div className="item-footer">
                     <div className='name'>{this.props.code}</div>
