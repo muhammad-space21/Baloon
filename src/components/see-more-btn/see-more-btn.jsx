@@ -5,8 +5,6 @@ import './see-more-btn.styles.scss';
 import arrowDown from '../../Assets/Icons/down-arrow.png';
 import arrowUp from '../../Assets/Icons/up-arrow.png';
 
-import SeeMore from '../see-more-container/see-more';
-
 
 class SeeMoreBtn extends React.Component {
     constructor(props) {
@@ -49,10 +47,8 @@ class SeeMoreBtn extends React.Component {
                         src={arrowUp}
                         onClick={this.handleClick}
                         alt="see-more-btn-up"
-                        /> ||
-                        <SeeMore />
-                    }
-                    
+                        />        
+                    }      
                 </div>
             </div>
         );

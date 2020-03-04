@@ -14,25 +14,23 @@ import ArticleTruckPage from './pages/article-truck-page/article-truck-page';
 import FormPage from './pages/form-page/form-page';
 
 
-class App extends React.Component {
+const App = () => {
 
-
-  render() {
 
     return(
       <div className='app'>
         <Switch>
           <Route exact path='/' component={Homepage} />
-          <Route path='/description-page' component={DescriptionPage} />
-          <Route path='/search-result-page' component={SearchResultPage} />
-          <Route path='/order-page' component={OrderPage} />
-          <Route path='/article-car-page' component={ArticleCarPage} />
-          <Route path='/article-truck-page' component={ArticleTruckPage} />
-          <Route path='/form-page' component={FormPage} />
+          <Route exact path='/description-page' component={DescriptionPage} />
+          <Route exact path='/search-result-page' component={SearchResultPage} />
+          <Route exact path='/order-page' component={OrderPage} />
+          <Route exact path='/article-car-page' component={ArticleCarPage} />
+          <Route exact path='/article-truck-page' component={ArticleTruckPage} />
+          <Route exact path='/form-page' component={FormPage} />
         </Switch>
       </div>
     )
-  }
-};
+  };
+
 
 export default App;
