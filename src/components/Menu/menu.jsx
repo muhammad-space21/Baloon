@@ -20,7 +20,7 @@ class Menu extends React.Component {
 
 
     componentDidMount() {
-        const url = 'https://78161d90.ngrok.io/api/tyres';
+        const url = 'https://6aa8944b.ngrok.io';
         fetch('https://cors-anywhere.herokuapp.com/' + url)
             .then(res => res.json())
             .then(data => this.setState({
@@ -31,7 +31,6 @@ class Menu extends React.Component {
 
     render() {
         const { tyres_array } = this.state
-
         return (
             <div className='menu'>
                 <Container>
