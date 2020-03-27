@@ -9,7 +9,6 @@ import SeeMoreContainer from '../see-more-container/see-more';
 
 
 const SeeMoreBtn = () => {
-
         const [show, setShow] = useState(true);
         return (
             <div className='see-more-btn'>

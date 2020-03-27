@@ -3,19 +3,22 @@ import axios from 'axios';
 import { GET_DATA } from './menu-types';
 
 
-// Get Data of tyres from an API.a1
+// Get Data of tyres from an API.
 
-const getData = () => dispatch => {
-    const url = 'https://6aa8944b.ngrok.io';
-        axios.get('https://cors-anywhere.herokuapp.com/' + url)
-            .then(res => res.json())
+export const getData = () => dispatch => {
+    // const url = 'https://97a35e17.ngrok.io';
+        axios.get('https://jsonplaceholder.typicode.com/todos/1', {
+            headers : { 
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            }
+        })
+            .then(response => response.json())
             .then(data => {
-                dispatch({
+                dispatch({ 
                     type: GET_DATA,
                     payload: data
                 })
             })
             .catch(error => console.log(error));
 };
-
-export default getData;

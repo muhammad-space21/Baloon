@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Switch, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './redux/store';
-import { ErrorBoundary } from './components/Error-boundary/error-boundary';
+import  ErrorBoundary  from './components/Error-boundary/error-boundary';
 
 const Homepage = lazy(() => import('./pages/homepage/homepage'));
 const DescriptionPage = lazy(() => import('./pages/description-page/description-page'));

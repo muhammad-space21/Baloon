@@ -5,7 +5,7 @@ const INITIAL_STATE = {
 };
 
 
-const menuReducer = ( state=INITIAL_STATE, action ) => {
+const menuReducer = ( state = INITIAL_STATE, action ) => {
     switch (action.type) {
         case GET_DATA: 
             return {

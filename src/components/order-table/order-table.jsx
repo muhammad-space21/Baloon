@@ -8,28 +8,8 @@ import ButtonSelect from '../button-select/button-select';
 
 
 
-class OrderTable extends React.Component {
+const OrderTable = () => {
 
-    constructor(props) {
-        super(props);
-
-        this.state = {
-            tyres_array:[]
-        }
-    }
-
-
-    componentDidMount() {
-        const url = 'https://78161d90.ngrok.io/api/tyres';
-        fetch('https://cors-anywhere.herokuapp.com/' + url)
-            .then(res => res.json())
-            .then(data => this.setState({
-                tyres_array: data
-            }))
-    }
-
-    render() {
-        const { tyres_array } = this.state;
         return (
             <div className='order-table'>
                 <Container>
@@ -100,6 +80,5 @@ class OrderTable extends React.Component {
             </div>
         );
     };
-};
 
 export default OrderTable;
