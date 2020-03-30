@@ -6,7 +6,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Switch, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './redux/store';
+
 import  ErrorBoundary  from './components/Error-boundary/error-boundary';
+import Spinner from './components/spinner/spinner';
 
 const Homepage = lazy(() => import('./pages/homepage/homepage'));
 const DescriptionPage = lazy(() => import('./pages/description-page/description-page'));
@@ -25,7 +27,7 @@ class App extends React.Component {
           <div className='app'>
             <Switch>
               <ErrorBoundary>
-                <Suspense fallback={<div>Loading...</div>}>
+                <Suspense fallback={<Spinner />}>
                   <Route exact path='/' component={Homepage} />
                   <Route exact path='/description-page' component={DescriptionPage} />
                   <Route exact path='/search-result-page' component={SearchResultPage} />

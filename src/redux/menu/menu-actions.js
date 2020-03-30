@@ -1,13 +1,12 @@
 import axios from 'axios';
 
-import { GET_DATA } from './menu-types';
+import { GET_DATA, DELETE_DATA } from './menu-types';
 
 
-// Get Data of tyres from an API.
+// Get Data of tyres from an API Action.
 
 export const getData = () => dispatch => {
-    // const url = 'https://97a35e17.ngrok.io';
-        axios.get('https://jsonplaceholder.typicode.com/todos/1', {
+        axios.get('https://jsonplaceholder.typicode.com/todos', {
             headers : { 
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'
@@ -21,4 +20,23 @@ export const getData = () => dispatch => {
                 })
             })
             .catch(error => console.log(error));
+};
+
+// Delete Data Action
+
+export const deleteData = (id) => dispatch => {
+    axios.delete(`https://jsonplaceholder.typicode.com/todos/${id}/`, {
+            headers : { 
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            dispatch({
+                type: DELETE_DATA,
+                payload: data
+            })
+        })
+        .catch(error => console.log(error));
 };
