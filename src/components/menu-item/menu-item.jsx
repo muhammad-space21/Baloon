@@ -12,7 +12,8 @@ import MenuButton from '../button-menu/button-menu';
 
 class MenuItem extends React.Component {
     static propTypes = {
-        data: PropTypes.array.isRequired
+        data: PropTypes.array.isRequired,
+        getData: PropTypes.func.isRequired
     }
 
     componentDidMount() {
